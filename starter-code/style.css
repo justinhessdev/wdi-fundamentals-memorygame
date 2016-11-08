@@ -1,3 +1,63 @@
 /* This is a multi-line
 comment. Add your CSS code
 from Unit 1 - 5 below  */
+
+.board{
+	height: 50%;
+	width: 50%;
+	display: inline-block;
+}
+.card{
+	height: 200px;
+	width: 150px;
+	border-style: solid;
+	border-width: 1px; 
+	background: #FFFF00;
+	border-radius: 10px;
+	float: left;
+	margin: 8%;
+}
+
+h1 {
+  color: rgb(2, 132, 130);
+}
+h2 {
+  color: #FFD700;
+}
+p {
+  color: #000000;
+}
+.name {
+	color:#ff0000;
+}
+body {
+	text-align: center;
+}
+nav {
+	background-color: #808080;
+}
+nav a {
+	background-color: #ffbf00;
+	color: #ffffff;
+	padding: 35px;
+	display: : block;
+	float: left;
+
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+nav a:hover{
+	background-color:  #ee5f3c;
+}
+
+footer {
+	background-color: #808080;
+}
