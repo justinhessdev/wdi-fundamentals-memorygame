@@ -22,16 +22,23 @@ var createCards = function() {
 
 function isMatch(twoCardsArray) {
 	if(twoCardsArray[0] == twoCardsArray[1]){
-		alert("Congrats, you found a match");
+		setTimeout(function() { 
+    		alert("Congrats, you got a match!");
+    		clearCards();
+		}, 500);
 	} else {
-		alert("Try again");		
-	}
+		setTimeout(function() { 
+    		alert("Try again");
+    		clearCards();
+		}, 500);	
+	}		
+}
 
+function clearCards() {
 	var cardList = document.querySelectorAll('[data-card]'); // All with attribute named "property"
 	for(i=0; i<cardList.length; i++){
 		cardList[i].innerHTML = "";	
-	}	
-		
+	}
 }
 
 //checks to see if there are cards in play
